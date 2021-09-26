@@ -1,0 +1,35 @@
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--color-darkgrey);
+  background-color: var(--color-lightblue);
+  font-weight: var(--weight-semibold);
+  height: 70px;
+}
+
+.nav_logo a {
+  display: flex;
+  align-items: center;
+}
+
+.nav_logo img {
+  width: 50px;
+  margin: 0px 10px;
+}
+
+.navbar__menu {
+  display: flex;
+}
+
+.navbar__menu__item {
+  padding: 5px 12px;
+  margin: 5px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  border-radius: 50%;
+}
+
+.navbar__menu__item:hover {
+  border: 2px solid white;
+}
