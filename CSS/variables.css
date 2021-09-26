@@ -1,0 +1,16 @@
+:root {
+  --color-white: #ffffff;
+  --color-darkgrey: #313131;
+  --color-lightgrey: #b8b8b8;
+
+  --font-large: 48px;
+  --font-medium: 28px;
+  --font-regular: 23px;
+  --font-small: 16px;
+  --font-micro: 14px;
+
+  --weight-bold: 700;
+  --weight-semibold: 600;
+  --weight-medium: 500;
+  --weight-regualr: 400;
+}
