@@ -1,9 +1,13 @@
-@import "variables.css";
+@import 'variables.css';
 
-@import "nav.css";
+@import 'nav.css';
+@import 'home.css';
 
 body {
   margin: 0px;
+  background: url('../images/background2.png');
+  background-size: 100%;
+  background-position: center;
 }
 
 a {
@@ -42,4 +46,10 @@ p {
   font-size: var(--font-small);
   font-weight: var(--weight-regualr);
   margin: 4px 0px;
+}
+button {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
 }
