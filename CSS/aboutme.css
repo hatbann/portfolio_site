@@ -1,0 +1,85 @@
+#About {
+  color: var(--color-darkgrey);
+}
+
+#About > h1 {
+  margin-bottom: 50px;
+  color: black;
+}
+
+#About > p {
+  font-weight: var(--weight-medium);
+  line-height: 25px;
+}
+.about__majors {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 150px;
+  padding: 0px 30px;
+}
+
+.major {
+  width: 400px;
+  line-height: 170%;
+}
+
+.major__icon {
+  font-size: var(--font-medium);
+  margin-bottom: 15px;
+}
+
+.major__title {
+  font-size: var(--font-medium);
+  font-weight: var(--weight-semibold);
+  display: inline-block;
+  margin-bottom: 25px;
+  line-height: 120%;
+}
+
+@keyframes floating {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes circle {
+  0%,
+  100% {
+  }
+  50% {
+    transform: rotateY(180deg);
+  }
+}
+
+@keyframes rotation {
+  0%,
+  100% {
+  }
+  25%,
+  75% {
+    transform: rotateZ(180deg);
+  }
+  50% {
+    transform: rotateZ(-180deg);
+  }
+}
+
+/* academic icon*/
+.fa-graduation-cap:first-child:hover {
+  animation: floating 1s infinite ease-in-out;
+  color: #78d7f5;
+}
+/* adventage icon*/
+.fa-star:hover {
+  animation: circle 1s infinite ease-in-out;
+  color: #ffcb00;
+}
+/*certification icon*/
+.fa-certificate:hover {
+  animation: rotation 3s infinite ease-in-out;
+  color: #5ae300;
+}

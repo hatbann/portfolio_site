@@ -2,12 +2,13 @@
 
 @import 'nav.css';
 @import 'home.css';
+@import 'aboutme.css';
 
 body {
   margin: 0px;
   background: url('../images/background2.png');
-  background-size: 100%;
-  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 a {
@@ -52,4 +53,12 @@ button {
   cursor: pointer;
   border: none;
   outline: none;
+}
+
+.section {
+  text-align: center;
+  padding: 50px;
+  max-width: 1700px;
+  margin: auto;
+  margin-top: 50px;
 }
