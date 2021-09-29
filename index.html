@@ -55,7 +55,7 @@
       <button class="home__contact">Contact Me</button>
     </section>
     <!-- About -->
-    <section id="About" class="section">
+    <section id="About" class="section section__container">
       <h1>About me</h1>
       <p>
         안녕하세요. 프론트엔드 개발자 조혜빈입니다.<br />
@@ -97,16 +97,18 @@
     </section>
     <!-- Skills -->
     <section id="Skills" class="section">
-      <h1>Skills</h1>
-      <h2>Skills & Tools</h2>
-      <p>
-        프론트엔드 관련 지식과 기술 뿐만아니라 배우지 않은 새로운 기술이나
-        언어를 배우는 것도 좋아합니다. <br />
-        프로젝트를 시작할 때 구체적으로 계획 짠 후 실행에 옮기며 웹사이트나
-        모바일 앱을 구현하기 전, 디자인 툴을 이용해 대략적인 틀을 만듭니다.
-      </p>
-      <div class="skillset">
+      <div class="section__container">
+        <h1>Skills</h1>
+        <h2>Skills & Tools</h2>
+        <p>
+          프론트엔드 관련 지식과 기술 뿐만아니라 배우지 않은 새로운 기술이나
+          언어를 배우는 것도 좋아합니다. <br />
+          프로젝트를 시작할 때 구체적으로 계획 짠 후 실행에 옮기며 웹사이트나
+          모바일 앱을 구현하기 전, 디자인 툴을 이용해 대략적인 틀을 만듭니다.
+        </p>
+        <div class="skillset">
         <div class="skillset__left">
+          <div class="skills">
           <h3 class="skillset__title">Skills</h3>
           <div class="skill">
             <div class="skill__description">
@@ -114,42 +116,50 @@
               <span>90%</span>
             </div>
             <div class="skill__bar">
-              <div class="skill__value"></div>
+              <div class="skill__value" style="width: 90%;"></div>
             </div>
+          </div>
+          <div class="skill">
             <div class="skill__description">
               <span>CSS</span>
               <span>90%</span>
             </div>
             <div class="skill__bar">
-              <div class="skill__value"></div>
+              <div class="skill__value" style="width: 90%;"></div>
             </div>
+          </div>
             <div class="skill__description">
               <span>JavaScript</span>
               <span>80%</span>
             </div>
             <div class="skill__bar">
-              <div class="skill__value"></div>
+              <div class="skill__value" style="width: 80%;"></div>
             </div>
           </div>
-        </div>
+          </div>
         <div class="skillset__right">
-          <h3 class="skillset__title">Languages</h3>
           <div class="languages">
-            <div class="language__description">
+          <h3 class="skillset__title">Languages</h3>
+          <div class="skill">
+            <div class="skill__description">
               <span>C</span>
               <span>90%</span>
             </div>
             <div class="skill__bar">
-              <div class="skill__value"></div>
+              <div class="skill__value" style="width: 90%;"></div>
             </div>
-            <div class="language__description">
+          </div>
+          <div class="skill">
+            <div class="skill__description">
               <span>C++</span>
               <span>90%</span>
             </div>
             <div class="skill__bar">
-              <div class="skill__value"></div>
+              <div class="skill__value" style="width: 90%;"></div>
             </div>
           </div>
+        </div>
+        <div class="tools">
           <h3 class="skillset__title">Tools</h3>
           <div class="tools__list">
             <li><span>Adobe Photoshop</span></li>
@@ -160,8 +170,10 @@
             <li><span>Visual Studio</span></li>
             <li><span>Visual Studio Code</span></li>
           </div>
+          </div>
         </div>
-      </div>
+        </div>
+     </div>
     </section>
     <!-- Works -->
     <section id="Works" class="section">

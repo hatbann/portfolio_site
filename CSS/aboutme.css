@@ -19,8 +19,7 @@
 }
 
 .major {
-  width: 400px;
-  line-height: 170%;
+  flex-basis: 25%;
 }
 
 .major__icon {
@@ -71,15 +70,15 @@
 /* academic icon*/
 .fa-graduation-cap:first-child:hover {
   animation: floating 1s infinite ease-in-out;
-  color: #78d7f5;
+  color: var(--color-skyblue);
 }
 /* adventage icon*/
 .fa-star:hover {
   animation: circle 1s infinite ease-in-out;
-  color: #ffcb00;
+  color: var(--color-orange);
 }
 /*certification icon*/
 .fa-certificate:hover {
   animation: rotation 3s infinite ease-in-out;
-  color: #5ae300;
+  color: var(--color-yellowgreen);
 }

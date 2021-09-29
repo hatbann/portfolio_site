@@ -3,12 +3,10 @@
 @import 'nav.css';
 @import 'home.css';
 @import 'aboutme.css';
+@import 'skills.css';
 
 body {
   margin: 0px;
-  background: url('../images/background2.png');
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 a {
@@ -22,6 +20,7 @@ ul {
 }
 * {
   box-sizing: border-box;
+  line-height: 170%;
 }
 
 /*Typography*/
@@ -58,7 +57,9 @@ button {
 .section {
   text-align: center;
   padding: 50px;
-  max-width: 1700px;
   margin: auto;
   margin-top: 50px;
+}
+.section__container {
+  max-width: 1700px;
 }
