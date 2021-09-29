@@ -20,4 +20,6 @@
   --weight-semibold: 600;
   --weight-medium: 500;
   --weight-regualr: 400;
+
+  --animation-duration: 300ms;
 }
