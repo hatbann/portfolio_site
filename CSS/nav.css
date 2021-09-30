@@ -6,6 +6,9 @@
   background-color: var(--color-lightblue);
   font-weight: var(--weight-semibold);
   height: 70px;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
 }
 
 .nav_logo a {
