@@ -8,6 +8,16 @@ navbarMenu.addEventListener('click', (event)=>{
     if(link == null){
         return;
     }
-    const scrollTo = document.querySelector(link);
-    scrollTo.scrollIntoView({behavior:"smooth"});
+    scrollIntoView(link);
 });
+
+//Handle Contactme Btn scrolling
+const contactMeBtn = document.querySelector('.home__contact');
+contactMeBtn.addEventListener('click', () =>{
+    scrollIntoView('#Contact');
+})
+
+function scrollIntoView(selector){
+    const scrollTo = document.querySelector(selector);
+    scrollTo.scrollIntoView({behavior:"smooth"});
+}
