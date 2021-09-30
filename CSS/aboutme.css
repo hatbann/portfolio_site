@@ -82,3 +82,10 @@
   animation: rotation 3s infinite ease-in-out;
   color: var(--color-yellowgreen);
 }
+
+#school {
+  font-weight: var(--weight-semibold);
+  margin-bottom: 10px;
+  color: var(--color-darkgrey);
+  font-size: 17px;
+}

@@ -31,9 +31,6 @@
   color: var(--color-darkgrey);
 }
 
-#school {
-  font-weight: var(--weight-semibold);
-  margin-bottom: 10px;
-  color: var(--color-darkgrey);
-  font-size: 17px;
+.home__contact:hover {
+  background-color: vaR(--color-orange);
 }
