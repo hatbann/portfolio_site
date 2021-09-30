@@ -33,3 +33,33 @@
 .navbar__menu__item:hover {
   border: 2px solid white;
 }
+
+.navbar__toggle-btn {
+  position: absolute;
+  right: 23px;
+  top: 10px;
+  font-size: 24px;
+  color: var(--color-darkgrey);
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar__toggle-btn {
+    display: block;
+  }
+  #navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navbar__menu {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    display: none;
+  }
+  .nav_logo {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+  }
+}
