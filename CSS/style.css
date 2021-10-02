@@ -102,3 +102,25 @@ button {
     flex-grow: 1;
   }
 }
+
+.arrow-up {
+  position: fixed;
+  bottom: 30px;
+  right: 40px;
+  font-size: 50px;
+  color: white;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity var(--animation-duration) ease-in;
+}
+
+.fa-arrow-up {
+  background-color: var(--color-lightblue);
+  border-radius: 50%;
+  padding: 8px;
+}
+
+.arrow-up.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
