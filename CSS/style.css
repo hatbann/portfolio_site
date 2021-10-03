@@ -70,6 +70,7 @@ button {
   .navbar__toggle-btn {
     display: block;
   }
+
   #navbar {
     flex-direction: column;
     align-items: flex-start;
@@ -78,11 +79,19 @@ button {
     flex-direction: column;
     width: 100%;
     align-items: center;
+    text-align: center;
     display: none;
   }
+
+  .navbar__menu.open {
+    display: block;
+    background-color: var(--color-lightblue);
+    margin-top: 50px;
+  }
+
   .nav_logo {
     position: absolute;
-    left: 10px;
+    left: 0px;
     top: 10px;
   }
 
@@ -101,26 +110,26 @@ button {
   .project {
     flex-grow: 1;
   }
-}
 
-.arrow-up {
-  position: fixed;
-  bottom: 30px;
-  right: 40px;
-  font-size: 50px;
-  color: white;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity var(--animation-duration) ease-in;
-}
+  .arrow-up {
+    position: fixed;
+    bottom: 30px;
+    right: 40px;
+    font-size: 50px;
+    color: white;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity var(--animation-duration) ease-in;
+  }
 
-.fa-arrow-up {
-  background-color: var(--color-lightblue);
-  border-radius: 50%;
-  padding: 8px;
-}
+  .fa-arrow-up {
+    background-color: var(--color-lightblue);
+    border-radius: 50%;
+    padding: 8px;
+  }
 
-.arrow-up.visible {
-  opacity: 1;
-  pointer-events: auto;
+  .arrow-up.visible {
+    opacity: 1;
+    pointer-events: auto;
+  }
 }

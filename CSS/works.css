@@ -87,7 +87,7 @@
   transform: translateY(0px);
 }
 .project__description h3 {
-  color: var(--color-white);
+  color: var(--color-skyblue);
   font-size: var(--font-small);
   font-weight: var(--weight-semibold);
 }
