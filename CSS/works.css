@@ -6,13 +6,13 @@
   font-size: var(--font-small);
 }
 
-.category__btn.active,
+.category__btn.selected,
 .category__btn:hover {
   background-color: #b8fc8c;
   color: var(--color-grey);
 }
 
-.category__btn.active .category__count,
+.category__btn.selected .category__count,
 .category__btn:hover .category__count {
   opacity: 1;
   top: 0;
