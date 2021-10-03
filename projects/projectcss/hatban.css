@@ -1,0 +1,45 @@
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 250px;
+  width: 100%;
+}
+
+.main img {
+  width: 600px;
+  margin-right: 50px;
+}
+
+.main img:hover {
+  cursor: pointer;
+}
+.description {
+  height: 500px;
+  padding-top: 130px;
+  width: 500px;
+}
+
+@media screen and (max-width: 1291px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 200px;
+  }
+  .main img {
+    margin-right: 0;
+    margin-left: 20px;
+  }
+  .description {
+    padding-top: 30px;
+    align-items: center;
+    text-align: center;
+    height: 300px;
+  }
+  h2 {
+    margin-bottom: 20px;
+  }
+}
