@@ -54,6 +54,7 @@ button {
   cursor: pointer;
   border: none;
   outline: none;
+  padding: 0;
 }
 
 .section {
@@ -66,7 +67,36 @@ button {
   max-width: 1700px;
 }
 
+.arrow-up {
+  position: fixed;
+  bottom: 30px;
+  right: 40px;
+  font-size: 50px;
+  color: white;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity var(--animation-duration) ease-in;
+}
+
+.fa-arrow-up {
+  background-color: var(--color-lightblue);
+  border-radius: 50%;
+  padding: 8px;
+}
+
+.arrow-up.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
 @media screen and (max-width: 768px) {
+  :root {
+    --font-large: 23px;
+    --font-medium: 18px;
+    --font-regular: 16px;
+    --font-small: 14px;
+    --font-micro: 12px;
+  }
   .navbar__toggle-btn {
     display: block;
   }
@@ -94,28 +124,11 @@ button {
     left: 0px;
     top: 10px;
   }
-
-  .about__majors {
-    flex-direction: column;
-    margin-top: 50px;
-  }
-  .major {
-    margin-bottom: 60px;
-  }
-
-  .skillset {
-    flex-direction: column;
-  }
-
-  .project {
-    flex-grow: 1;
-  }
-
   .arrow-up {
     position: fixed;
-    bottom: 30px;
-    right: 40px;
-    font-size: 50px;
+    bottom: 15px;
+    right: 20px;
+    font-size: 30px;
     color: white;
     opacity: 0;
     pointer-events: none;
@@ -131,5 +144,12 @@ button {
   .arrow-up.visible {
     opacity: 1;
     pointer-events: auto;
+  }
+  button {
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    padding: 0;
   }
 }

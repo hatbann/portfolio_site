@@ -98,3 +98,34 @@
   display: inline-block;
   margin: 0px 20px;
 }
+
+@media screen and (max-width: 768px) {
+  #Works {
+    padding: 10px 40px;
+  }
+  .project {
+    flex-grow: 1;
+    margin-bottom: 10px;
+  }
+
+  .category__btn {
+    border: 3px solid #b8fc8c;
+    border-radius: 50%;
+    padding: 8px 10px;
+    margin: 30px 10px 0px 10px;
+    font-size: var(--font-small);
+  }
+
+  .category__count {
+    margin-left: 2px;
+  }
+
+  .work__projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+    opacity: 1;
+    transition: all var(--animation-duration) ease-out;
+  }
+}

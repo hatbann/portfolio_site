@@ -7,7 +7,7 @@
 #Skills h2 {
   margin-bottom: 40px;
   margin-top: -20px;
-  font-size: 25px;
+  font-size: var(--font-regular);
   color: var(--color-darkgrey);
 }
 
@@ -65,4 +65,15 @@
 .skill__value {
   height: 3px;
   background-color: var(--color-orange);
+}
+
+@media screen and (max-width: 768px) {
+  .section__container > h1 {
+    margin-bottom: 23px;
+  }
+
+  .skillset {
+    flex-direction: column;
+    margin-top: 70px;
+  }
 }
