@@ -10,7 +10,6 @@ navbarMenu.addEventListener('click', (event)=>{
     }
     navbarMenu.classList.remove('open');
     scrollIntoView(link);
-    selectNavItem(target);
 });
 
 //navbar toggle button for small screen
@@ -35,10 +34,6 @@ document.addEventListener('scroll' , ()=>
 })
 
 
-function scrollIntoView(selector){
-    const scrollTo = document.querySelector(selector);
-    scrollTo.scrollIntoView({behavior:"smooth"});
-}
 
 //show arrow-up btn when scrolling down
 const arrowUp = document.querySelector('.arrow-up')
@@ -102,6 +97,13 @@ function selectNavItem(selected){
     selectedNavItem = selected;
     selectedNavItem.classList.add('active');
 }
+
+function scrollIntoView(selector){
+    const scrollTo = document.querySelector(selector);
+    scrollTo.scrollIntoView({behavior:"smooth"});
+    selectNavItem(navItems[sectionIds.indexOf(selector)]);
+}
+
 const observerOptions = {
     root:null,
     rootMargin: '0px',
