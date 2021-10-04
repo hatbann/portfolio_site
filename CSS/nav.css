@@ -38,6 +38,10 @@
   border: 2px solid white;
 }
 
+.navbar__menu__item.active {
+  border: 2px solid white;
+}
+
 .navbar__toggle-btn {
   position: absolute;
   right: 23px;
